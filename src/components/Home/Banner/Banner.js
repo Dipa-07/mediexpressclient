@@ -11,7 +11,7 @@ const Banner = () => {
           <div class='d-flex align-items-center justify-content-center'>
             <div>
               <h1 className="text-5xl font-bold">Welcome to MediExpress!</h1>
-              <h4 className="py-6">MediExpress brings the medical treatment to people  in a easy way. One can now access medical services simply by just sitting at home.</h4>
+              <h4 className="py-6">MediExpress brings the medical treatment to people  in an easy way. One can now access medical services simply by just sitting at home.</h4>
               
             </div>
           </div>

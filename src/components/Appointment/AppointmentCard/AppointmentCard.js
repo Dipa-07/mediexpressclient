@@ -6,6 +6,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { Link, useHistory } from 'react-router-dom';
+import './AppointmentCard.css'
 const AppointmentCard = (props) => {
     console.log(props.doctor);
     const history=useHistory();
@@ -16,8 +17,9 @@ const AppointmentCard = (props) => {
     const {_id,name,qualification,institute,speciality,dailylimit,address,availability,imageUrl}=props.doctor;
     return (
         <div>
-        <Card sx={{ maxWidth: 345 }}>
+        <Card sx={{ maxWidth:'90%'}}>
         <CardMedia
+        style={{ width: "50%", margin: "auto" }}
           component="img"
           alt="green iguana"
           width="60%"
@@ -43,7 +45,7 @@ const AppointmentCard = (props) => {
     </Typography>
         </CardContent>
         <CardActions>
-        <Link to={`/confirmation/${_id}`}>
+        <Link  className="booking mx-auto w-40" to={`/confirmation/${_id}`}>
           <Button  onClick={()=>handleClick(_id)} size="small">Book Appointment</Button>
           </Link>
           </CardActions>

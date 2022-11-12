@@ -56,7 +56,7 @@ function DoctorAdvice() {
         }
 
       })
-            // setMe(id);
+            setMe(id);
         })
 
         socket.on("callUser", (data) => {
@@ -117,19 +117,20 @@ function DoctorAdvice() {
         setCallEnded(true)
         connectionRef.current.destroy()
         console.log(data);
-        document.getElementById('textId').value = '';
+        setIdToCall(" ");
     }
 
     return (
         <>
+            
             <h2 className="text-center text-primary ">Video Calling</h2>
             <div className="container">
-                <div class="video-container row justify-content-evenly">
-                    <div class="video col-lg-4">
+                <div class="video-container d-flex justify-content-center">
+                    <div class="video mx-5">
                         {stream && <video playsInline muted ref={myVideo} autoPlay style={{ width: "350px" }} />}
 
                     </div>
-                    {callAccepted && !callEnded ? <div class="video col-lg-4">
+                    {callAccepted && !callEnded ? <div class="video">
                         {callAccepted && !callEnded ?
                             <video playsInline ref={userVideo} autoPlay style={{ width: "350px" }} /> :
                             null}
@@ -163,7 +164,7 @@ function DoctorAdvice() {
                     <h2>Make a Call</h2>
                     <div>
                         <TextField
-                            id="textId"
+                            id="filled-basic"
                             label="ID to call"
                             variant="filled"
                             value={idToCall}

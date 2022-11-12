@@ -24,8 +24,8 @@ import ShowAllReport from './ShowAllReport';
 import ShowSpecificReport from './ShowSpecificReport';
 import InsertDoctor from './InsertDoctor';
 import DoctorAdvice from '../Videocalling/DoctorAdvice';
-import FriendSection from './FriendSection';
-import PeopleYouMayKnowSection from './PeopleYouMayKnowSection';
+import PatientSection from '../DashBoard/PatientSection';
+// import PeopleYouMayKnowSection from './PeopleYouMayKnowSection';
 const drawerWidth = 240;
 
 function DashBoard(props) {
@@ -44,8 +44,8 @@ function DashBoard(props) {
      document.getElementById("showSpecificReport").style.display="none";
      document.getElementById("addDoctor").style.display="none";
     document.getElementById("doctorAdvice").style.display="none";
-    document.getElementById("friendSection").style.display="none";
-    document.getElementById("peopleYouMayKnowSection").style.display="none";
+    document.getElementById("PatientSection").style.display="none";
+    // document.getElementById("peopleYouMayKnowSection").style.display="none";
  }
  else if(index===1){
     document.getElementById("updateProfile").style.display="none";
@@ -55,8 +55,8 @@ function DashBoard(props) {
     document.getElementById("showAllReport").style.display="none";
     document.getElementById("showSpecificReport").style.display="none";
     document.getElementById("doctorAdvice").style.display="none";
-    document.getElementById("friendSection").style.display="none";
-    document.getElementById("peopleYouMayKnowSection").style.display="none";
+    document.getElementById("PatientSection").style.display="none";
+    // document.getElementById("peopleYouMayKnowSection").style.display="none";
  }
  else if(index===2){
     document.getElementById("updateProfile").style.display="none";
@@ -66,8 +66,8 @@ function DashBoard(props) {
     document.getElementById("showAllReport").style.display="none";
     document.getElementById("showSpecificReport").style.display="none";
     document.getElementById("doctorAdvice").style.display="none";
-    document.getElementById("friendSection").style.display="none";
-    document.getElementById("peopleYouMayKnowSection").style.display="none";
+    document.getElementById("PatientSection").style.display="none";
+    // document.getElementById("peopleYouMayKnowSection").style.display="none";
  }
  else if(index===3){
   document.getElementById("updateProfile").style.display="none";
@@ -77,8 +77,8 @@ function DashBoard(props) {
   document.getElementById("showSpecificReport").style.display="none";
   document.getElementById("addDoctor").style.display="none";
   document.getElementById("doctorAdvice").style.display="none";
-  document.getElementById("friendSection").style.display="none";
-  document.getElementById("peopleYouMayKnowSection").style.display="none";
+  document.getElementById("PatientSection").style.display="none";
+  // document.getElementById("peopleYouMayKnowSection").style.display="none";
  }
  else if(index===4){
   document.getElementById("updateProfile").style.display="none";
@@ -88,8 +88,8 @@ function DashBoard(props) {
   document.getElementById("showSpecificReport").style.display="block";
   document.getElementById("addDoctor").style.display="none";
   document.getElementById("doctorAdvice").style.display="none";
-  document.getElementById("friendSection").style.display="none";
-  document.getElementById("peopleYouMayKnowSection").style.display="none";
+  document.getElementById("PatientSection").style.display="none";
+  // document.getElementById("peopleYouMayKnowSection").style.display="none";
  }
  else if(index===5){
   document.getElementById("updateProfile").style.display="none";
@@ -99,8 +99,8 @@ function DashBoard(props) {
   document.getElementById("showSpecificReport").style.display="none";
   document.getElementById("addDoctor").style.display="none";
   document.getElementById("doctorAdvice").style.display="none";
-  document.getElementById("friendSection").style.display="none";
-  document.getElementById("peopleYouMayKnowSection").style.display="none";
+  document.getElementById("PatientSection").style.display="none";
+  // document.getElementById("peopleYouMayKnowSection").style.display="none";
  }
  else if(index===6){
   document.getElementById("doctorAdvice").style.display="block";
@@ -110,8 +110,8 @@ function DashBoard(props) {
   document.getElementById("showAllReport").style.display="none";
   document.getElementById("showSpecificReport").style.display="none";
   document.getElementById("addDoctor").style.display="none";
-  document.getElementById("friendSection").style.display="none";
-  document.getElementById("peopleYouMayKnowSection").style.display="none";
+  document.getElementById("PatientSection").style.display="none";
+  // document.getElementById("peopleYouMayKnowSection").style.display="none";
   
  }
  else if(index==7){
@@ -122,8 +122,8 @@ function DashBoard(props) {
   document.getElementById("showSpecificReport").style.display="none";
   document.getElementById("addDoctor").style.display="none";
   document.getElementById("doctorAdvice").style.display="none";
-  document.getElementById("friendSection").style.display="block";
-  document.getElementById("peopleYouMayKnowSection").style.display="none";
+  document.getElementById("PatientSection").style.display="block";
+  // document.getElementById("peopleYouMayKnowSection").style.display="none";
  }
  else if(index==8){
   document.getElementById("updateProfile").style.display="none";
@@ -133,8 +133,8 @@ function DashBoard(props) {
   document.getElementById("showSpecificReport").style.display="none";
   document.getElementById("addDoctor").style.display="none";
   document.getElementById("doctorAdvice").style.display="none";
-  document.getElementById("friendSection").style.display="none";
-  document.getElementById("peopleYouMayKnowSection").style.display="block";
+  document.getElementById("PatientSection").style.display="none";
+  // document.getElementById("peopleYouMayKnowSection").style.display="block";
   
  }
  else{
@@ -145,8 +145,8 @@ function DashBoard(props) {
   document.getElementById("showSpecificReport").style.display="none";
   document.getElementById("addDoctor").style.display="none";
   document.getElementById("doctorAdvice").style.display="none";
-  document.getElementById("friendSection").style.display="none";
-  document.getElementById("peopleYouMayKnowSection").style.display="none";
+  document.getElementById("PatientSection").style.display="none";
+  // document.getElementById("peopleYouMayKnowSection").style.display="none";
  }
 }
   const drawer = (
@@ -156,7 +156,7 @@ function DashBoard(props) {
       <Toolbar />
       <Divider />
       <List>
-        {['Update Profile', 'Upload Prescription','Add Doctor','Update Report by Value', 'Show Specific Report','Show All Report','Doctor Advice','friendSection','peopleYouMayKnow'].map((text, index) => (
+        {['Update Profile', 'Upload Prescription','Add Doctor','Update Report by Value', 'Show Specific Report','Show All Report','Doctor Advice','PatientSection'].map((text, index) => (
           <ListItem button key={text} onClick={()=>handleClick(text,index)}>
             <ListItemIcon>
               {index % 2 === 0 ? <AccountCircleIcon /> : <AddBoxIcon/>}
@@ -254,12 +254,12 @@ function DashBoard(props) {
         <div id="doctorAdvice" style={{"display":"none"}}>
        <DoctorAdvice></DoctorAdvice> 
         </div>
-        <div id="friendSection" style={{"display":"none"}}>
-        <FriendSection></FriendSection>
+        <div id="PatientSection" style={{"display":"none"}}>
+        <PatientSection></PatientSection>
         </div>
-        <div className="div" id="peopleYouMayKnowSection" style={{"display":"none"}}>
+        {/* <div className="div" id="peopleYouMayKnowSection" style={{"display":"none"}}>
         <PeopleYouMayKnowSection></PeopleYouMayKnowSection>
-        </div>
+        </div> */}
       </Box>
     </Box>
   );

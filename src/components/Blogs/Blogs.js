@@ -8,21 +8,21 @@ const Blogs = () => {
     const blogs = [
         {
             "id": 1,
-            "name": "Dr. Shakib",
+            "name": "Dr.Shakib",
             "title": "If Someone is Having a Stroke: 3 Things To Do and 3 Things Not To Do",
             "text": "When a person is having a stroke, every second counts. And what you do in those critical moments can potentially help save someone’s life. Call 911 immediately. Note the time you first see symptoms. Perform CPR, if necessary. Perform CPR, if necessary",
             "img": dr1
         },
         {
             "id": 2,
-            "name": "Dr. Tamim",
+            "name": "Dr.Tamim",
             "title": "If Someone is Having a Stroke: 3 Things To Do and 3 Things Not To Do",
             "text": "When a person is having a stroke, every second counts. And what you do in those critical moments can potentially help save someone’s life. Call 911 immediately. Note the time you first see symptoms. Perform CPR, if necessary. Perform CPR, if necessary",
             "img": dr2
         },
         {
             "id": 3,
-            "name": "Dr. Miraz",
+            "name": "Dr.Taskin",
             "title": "If Someone is Having a Stroke: 3 Things To Do and 3 Things Not To Do",
             "text": "When a person is having a stroke, every second counts. And what you do in those critical moments can potentially help save someone’s life. Call 911 immediately. Note the time you first see symptoms. Perform CPR, if necessary. Perform CPR, if necessary",
             "img": dr3

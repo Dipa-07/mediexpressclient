@@ -7,23 +7,24 @@ import people3 from '../../../Images/av4.jpg';
 const Testimonial = () => {
   const testimonials = [
     {
-      "name": "John Wick",
+      "name": "Mr. X",
       "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque quia ex, rerum maiores consectetur labore odit nulla eos aspernatur illum nobis, debitis quod dolor sint, suscipit exercitationem hic dolore? Eligendi.",
       "img": people1
     },
     {
-      "name": "John Constantine",
+      "name": "Mr. Y",
       "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque quia ex, rerum maiores consectetur labore odit nulla eos aspernatur illum nobis, debitis quod dolor sint, suscipit exercitationem hic dolore? Eligendi.",
       "img": people2
     },
     {
-      "name": "Jon Snow",
+      "name": "Mr. Z",
       "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque quia ex, rerum maiores consectetur labore odit nulla eos aspernatur illum nobis, debitis quod dolor sint, suscipit exercitationem hic dolore? Eligendi.",
       "img": people3
     }
   ]
   return (
     <div class="testimonial_section">
+      <h2 className="mb-3">Our Patient Reviews</h2>
       <div class="container text-center">
         <div class="row">
           <div class="col">

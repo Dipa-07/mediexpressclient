@@ -78,10 +78,10 @@ const Login = () => {
           <div className='w-50 mx-auto'>
             <input className='w-100' type="text" placeholder="Email" {...register("Email", { required: true, pattern: /^\S+@\S+$/i })} /> <br /> <br />
             <input className='w-100' type="password" placeholder="Password" {...register("Password", { required: true, min: 6, maxLength: 12 })} /> <br /> <br />
-            <Form.Group className="mb-3" controlId="formBasicCheckbox">
-              <Form.Check className={agree ? 'text-primary' : 'text-danger'} onClick={() => setAgree(!agree)} type="checkbox" label="Accept terms and conditions?" />
+            <Form.Group className="mb-3" class="booking" controlId="formBasicCheckbox">
+              <Form.Check  className={agree ? 'text-primary' : 'text-danger'} onClick={() => setAgree(!agree)} type="checkbox" label="Accept terms and conditions?" />
             </Form.Group>
-            <Button className='w-75 p-2 ms-4 mb-2' disabled={!agree} variant="contained" input type="submit">Login </Button>
+            <Button className='w-75 p-2 ms-4 mb-2 mt-3' disabled={!agree} variant="contained" input type="submit">Login </Button>
             <p className='my-2'>Don't have an Account? <Link onClick={navigateRegister} className='text-primary text-decoration-none' to="/signup">Please Register...</Link></p>
            
           </div>

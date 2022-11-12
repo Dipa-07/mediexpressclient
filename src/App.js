@@ -35,9 +35,9 @@ function App() {
           <Route path="/confirmation/:dId">
             <AppointmentForm></AppointmentForm>
           </Route>
-          <PrivateRoute path="/dashboard">
+          <Route path="/dashboard">
             <DashBoard></DashBoard>
-          </PrivateRoute>
+          </Route>
           <Route path="/blogs">
             <Blogs></Blogs>
           </Route>

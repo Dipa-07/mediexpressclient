@@ -14,7 +14,7 @@ const Services = () => {
             "id": 1,
             "name": "Nephrology",
             "img": neph,
-            "text": "The nephrology department provides diagnosis and treatment for patients with all forms of acute and chronic kidney disease (excluding dialysis and transplantation) together with the investigation and management of hypertension"
+            "text": "The nephrology department provides diagnosis and treatment for patients with all forms of acute and chronic kidney disease (excluding dialysis and transplantation) together with the investigation and management of hypertension."
 
         },
         {
@@ -35,7 +35,7 @@ const Services = () => {
             "id": 4,
             "name": "Emergency",
             "img": emg,
-            "text":"medical specialty concerned with the care and treatment of acutely ill or injured patients who need immediate medical attention. We provide 24/7 ambulance service."
+            "text":"Medical specialty concerned with the care and treatment of acutely ill or injured patients who need immediate medical attention. We provide 24/7 ambulance service."
 
         },
         {
@@ -55,7 +55,7 @@ const Services = () => {
     ];
     return (
         <div class="service_section">
-            <h2 className='text-center'>The Services we provide</h2>
+            <h2 className='text-center mb-3'>The Services We Provide</h2>
             <div class="container text-center">
                 <div class='row'>
                     <div class='col-lg-4'>

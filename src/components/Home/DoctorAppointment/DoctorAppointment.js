@@ -18,9 +18,9 @@ const DoctorAppointment = () => {
           <div class="da_description">
 
 
-            <h6>Appointment</h6>
-            <h5>Make an Appointment</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quas totam aspernatur hic, illo unde similique! Placeat assumenda dicta tempora nostrum harum excepturi dolor consectetur, aliquid voluptates molestiae laudantium neque.</p>
+            
+            <h2>Make an Appointment</h2>
+            <h5 className="my-3">Explore our services and don't be late to make an appointment with our specialized doctors. Just click on the Make Appointment button and follow further procedures for an easy appointment confirmation.</h5>
             <Link to='/appointment'><button class="btn btn-primary">Make Appointment</button></Link>
           </div>
         </Grid>
